@@ -2,13 +2,15 @@
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
 html {
   font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /**
@@ -256,6 +258,7 @@ hr {
 
 button,
 input,
+optgroup,
 select,
 textarea {
   font: inherit; /* 1 */
@@ -449,8 +452,7 @@ a {
 .large-hero__text-content {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 100%;
   text-align: center;
@@ -793,8 +795,6 @@ a {
 @media (min-width: 800px) {
 
   .row--equal-height-at-medium {
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -802,8 +802,6 @@ a {
 
 .row--equal-height-at-medium > div {
   float: none;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -811,8 +809,6 @@ a {
 @media (min-width: 1010px) {
 
   .row--equal-height-at-large {
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -820,8 +816,6 @@ a {
 
 .row--equal-height-at-large > div {
   float: none;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -975,7 +969,7 @@ a {
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
+      background-image: url('/assets/images/sprites/sprite-d675eadb.svg');
     }
 
 .icon--clear-view-escapes {
